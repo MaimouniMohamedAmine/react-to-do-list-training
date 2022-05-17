@@ -1,7 +1,7 @@
 import React from "react";
 
 const TodosList = ({ todos, setTodos, setEditTodo }) => {
-  const handleComplete = (todo) => {
+  const handleComplete = (todos) => {
     setTodos(
       todos.map((item) => {
         if (item.id === todos.id) {
