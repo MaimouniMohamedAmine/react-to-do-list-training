@@ -1,9 +1,9 @@
-import "./App.css";
+import "./TodoContainer.css";
 import Header from "./components/Header";
 import ToDoInputs from "./components/ToDoInputs";
 import TodoLists from "./components/TodoLists";
 import React, { useState, useEffect } from "react";
-const App = () => {
+const TodoContainer = () => {
   const intialState = JSON.parse(localStorage.getItem("todos")) || [];
   const [input, setInput] = useState("");
   const [todos, setTodos] = useState(intialState);
@@ -39,4 +39,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default TodoContainer;

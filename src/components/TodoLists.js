@@ -1,11 +1,15 @@
 import React from "react";
 
 const TodosList = ({ todos, setTodos, setEditTodo }) => {
-  const handleComplete = (todos) => {
+  const handleComplete = (todo) => {
     setTodos(
       todos.map((item) => {
-        if (item.id === todos.id) {
-          return { ...item, completed: !item.completed };
+        if (item.id === todo.id) {
+          return {
+            //Modified Item
+            ...item,
+            completed: !item.completed,
+          };
         }
         return item;
       })
@@ -25,7 +29,7 @@ const TodosList = ({ todos, setTodos, setEditTodo }) => {
           <input
             type="text"
             value={todo.title}
-            className={`list ${todo.completed ? "complete" : ""}`}
+            className={`list ${todo.completed ? "completed" : ""}`}
             onChange={(event) => event.preventDefault()}
           />
           <div>
