@@ -40,6 +40,38 @@
   text-decoration: line-through;
   color: tomato !important;
 }
+h1 {
+  color: #d2c6a7;
+}
+.task-input {
+}
+::placeholder {
+  color: #a5e5d5;
+}
+.add-button {
+  background: #b8d5cd;
+  color: #006a4e;
+  border: none;
+  border-radius: 7px;
+  padding: 7px 7px 7px 7px;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
 .list-item {
-  text-decoration: none !important;
+  list-style: none;
+}
+.delete-task-button {
+  background: none;
+  border: none;
+  color: red;
+}
+.edit-task-button {
+  background: none;
+  border: none;
+  color: blue;
+}
+.complete-task-button {
+  background: none;
+  border: none;
+  color: green;
 }

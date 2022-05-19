@@ -38,7 +38,7 @@ const ToDoInputs = ({
     <form onSubmit={onFormSubmit}>
       <input
         type="text"
-        placeholder="Enter a to do task... "
+        placeholder="Enter a task... "
         className="task-input"
         value={input}
         required

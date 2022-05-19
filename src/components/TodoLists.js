@@ -6,7 +6,6 @@ const TodosList = ({ todos, setTodos, setEditTodo }) => {
       todos.map((item) => {
         if (item.id === todo.id) {
           return {
-            //Modified Item
             ...item,
             completed: !item.completed,
           };
